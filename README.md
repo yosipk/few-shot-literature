@@ -9,6 +9,9 @@ The approaches to learning from small amount labeled data are:
 <details>
 <summary>Paper Title, Paper Authors, Paper Page</summary>
 <p>This is abstract sample</p>
+</details>
+
+<details>
 <summary>Paper Title 2, Paper Authors 2, Paper Page 2</summary>
 <p>This is abstract sample 2</p>
 </details>
