@@ -9,7 +9,7 @@ The approaches to learning from small amount labeled data are:
 
 ## Literature
 <details>
-<summary>Matching Networks for One Shot Learning, <a href="https://arxiv.org/abs/1606.04080">paper</a>, meta-learning</summary>
+<summary>Matching Networks for One Shot Learning, <a href="https://arxiv.org/abs/1606.04080">paper</a>, <div class="content-box-green">meta-learning</div></summary>
 <p>
 Learning from a few examples remains a key challenge in machine learning. Despite recent advances in important domains such as vision and language, the standard supervised deep learning paradigm does not offer a satisfactory solution for learning new concepts rapidly from little data. In this work, we employ ideas from metric learning based on deep neural features and from recent advances that augment neural networks with external memories. <b>Our framework learns a network that maps a small labelled support set and an unlabelled example to its label, obviating the need for fine-tuning to adapt to new class types.</b> We then define one-shot learning problems on vision (using Omniglot, ImageNet) and language tasks. Our algorithm improves one-shot accuracy on ImageNet from 87.6% to 93.2% and from 88.0% to 93.8% on Omniglot compared to competing approaches. We also demonstrate the usefulness of the same model on language modeling by introducing a one-shot task on the Penn Treebank.
 </p>
@@ -57,7 +57,7 @@ Despite recent breakthroughs in the applications of deep neural networks, one se
 </p>
 </details>
 <details>
-<summary>Learning to learn by gradient descent by gradient descent, <a href="https://arxiv.org/abs/1606.04474"></a>, meta-learning</summary>
+<summary>Learning to learn by gradient descent by gradient descent, <a href="https://arxiv.org/abs/1606.04474">paper</a>, meta-learning</summary>
 <p>
 The move from hand-designed features to learned features in machine learning has been wildly successful. In spite of this, optimization algorithms are still designed by hand. <b>In this paper we show how the design of an optimization algorithm can be cast as a learning problem, allowing the algorithm to learn to exploit structure in the problems of interest in an automatic way.</b> Our learned algorithms, implemented by LSTMs, outperform generic, hand-designed competitors on the tasks for which they are trained, and also generalize well to new tasks with similar structure. We demonstrate this on a number of tasks, including simple convex problems, training neural networks, and styling images with neural art.
 </p>
