@@ -1,7 +1,7 @@
 <svg viewBox="0 0 24 8" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .default { font: italic 13px sans-serif; fill: red; }
+    .defaultfont { font: 13px sans-serif; fill: red; }
   </style>
 
-  <text x="0" y="0" class="default">meta-learning</text>
+  <text x="0" y="0" class="defaultfont">meta-learning</text>
 </svg>
