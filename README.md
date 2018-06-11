@@ -1,3 +1,12 @@
+<style>
+rcorners { border-radius: 15px; 
+           background: #73AD21;
+           padding: 20px; 
+           width: 200px;
+           height: 150px; 
+         }
+</style>
+
 # Learning from small amount of labeled data
 ## Overview
 **Few-shot learning** is a general umbrella term for learning models with a small amount of data. 
@@ -9,7 +18,7 @@ The approaches to learning from small amount labeled data are:
 
 ## Literature
 <details>
-<summary>Matching Networks for One Shot Learning <img src="meta-learning.png" align="bottom"></summary>
+<summary>Matching Networks for One Shot Learning <p id='rcorners'>meta-learning</p></summary>
 <p>
 
 ---
