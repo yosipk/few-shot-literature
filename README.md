@@ -259,7 +259,6 @@ We develop a conceptually simple but powerful approach that can learn novel cate
 <a href="https://arxiv.org/abs/1707.02610">paper</a>
 
 ---
-<b>
 Few-shot learning refers to understanding new concepts from only a few examples. We propose an information retrieval-inspired approach for this problem that is motivated by the increased importance of maximally leveraging all the available information in this low-data regime. We define a training objective that aims to extract as much information as possible from each training batch by effectively optimizing over all relative orderings of the batch points simultaneously. <b>In particular, we view each batch point as a `query' that ranks the remaining ones based on its predicted relevance to them and we define a model within the framework of structured prediction to optimize mean Average Precision over these rankings.</b> Our method achieves impressive results on the standard few-shot classification benchmarks while is also capable of few-shot retrieval.
 
 ---
