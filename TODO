@@ -1,5 +1,8 @@
 * Improve the definitions
-* Add (rough) publication date, and sort the papers descending according to it
-* Add conference (if accepted)
-* Add authors, preferably with links to homepage
-* Add BibTex entry
+* Expand the definitions: a brief overview of each direction, with a small overview of approaches within that direction, referencing relevant papers
+* For each paper:
+  * Add (rough) publication date, and sort the papers descending according to it
+  * Add conference (if accepted)
+  * Add authors, preferably with links to homepage
+  * Add BibTex entry
+* Add a table with results on benchmark datasets
