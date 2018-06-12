@@ -59,7 +59,7 @@ We propose prototypical networks for the problem of few-shot classification, whe
 </details>
 
 <details>
-<summary>Meta-Learning for Semi-Supervised Few-Shot Classification <kbd>meta-learning</kbd>, <kbd>semi-supervised learning</kbd></summary>
+<summary>Meta-Learning for Semi-Supervised Few-Shot Classification <kbd>meta-learning</kbd>, <kbd>semi-supervised</kbd></summary>
 <p>
 
 ---
@@ -235,7 +235,7 @@ Humans are capable of learning a new fine-grained concept with very little super
 </details>
 
 <details>
-<summary>Learning to Learn: Model Regression Networks for Easy Small Sample Learning <kbd>transfer learning</kbd></summary>
+<summary>Learning to Learn: Model Regression Networks for Easy Small Sample Learning <kbd>transfer</kbd></summary>
 <p>
 
 ---
@@ -251,7 +251,7 @@ We develop a conceptually simple but powerful approach that can learn novel cate
 </details>
 
 <details>
-<summary>Few-Shot Learning Through an Information Retrieval Lens <kbd>meta-learning</kbd>, <kbd>transfer learning</kbd></summary>
+<summary>Few-Shot Learning Through an Information Retrieval Lens <kbd>meta-learning</kbd>, <kbd>transfer</kbd></summary>
 <p>
 
 ---
@@ -266,7 +266,7 @@ Few-shot learning refers to understanding new concepts from only a few examples.
 </details>
 
 <details>
-<summary>Learning from Small Sample Sets by Combining Unsupervised Meta-Training with CNNs <kbd>meta-learning</kbd>, <kbd>semi-supervised learning</kbd></summary>
+<summary>Learning from Small Sample Sets by Combining Unsupervised Meta-Training with CNNs <kbd>meta-learning</kbd>, <kbd>semi-supervised</kbd></summary>
 <p>
 
 ---
@@ -282,7 +282,7 @@ This work explores CNNs for the recognition of novel categories from few example
 </details>
 
 <details>
-<summary>Growing a Brain: Fine-Tuning by Increasing Model Capacity <kbd>transfer learning</kbd></summary>
+<summary>Growing a Brain: Fine-Tuning by Increasing Model Capacity <kbd>transfer</kbd></summary>
 <p>
 
 ---
@@ -298,7 +298,7 @@ CNNs have made an undeniable impact on computer vision through the ability to le
 </details>
 
 <details>
-<summary>Beyond Fine Tuning: A Modular Approach to Learning on Small Data <kbd>transfer learning</kbd></summary>
+<summary>Beyond Fine Tuning: A Modular Approach to Learning on Small Data <kbd>transfer</kbd></summary>
 <p>
 
 ---
@@ -314,7 +314,7 @@ In this paper we present a technique to train neural network models on small amo
 </details>
 
 <details>
-<summary>Piggyback: Adapting a Single Network to Multiple Tasks by Learning to Mask Weights <kbd>transfer learning</kbd></summary>
+<summary>Piggyback: Adapting a Single Network to Multiple Tasks by Learning to Mask Weights <kbd>transfer</kbd></summary>
 <p>
 
 ---
@@ -331,7 +331,7 @@ This work presents a method for adapting a single, fixed deep neural network to 
 
 
 <details>
-<summary>Learning without Forgetting <kbd>transfer learning</kbd></summary>
+<summary>Learning without Forgetting <kbd>transfer</kbd></summary>
 <p>
 
 ---
@@ -348,7 +348,7 @@ When building a unified vision system or gradually adding new capabilities to a 
 
 
 <details>
-<summary>Knowledge Concentration: Learning 100K Object Classifiers in a Single CNN <kbd>transfer learning</kbd></summary>
+<summary>Knowledge Concentration: Learning 100K Object Classifiers in a Single CNN <kbd>transfer</kbd></summary>
 <p>
 
 ---
