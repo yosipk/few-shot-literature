@@ -89,57 +89,146 @@ We propose an algorithm for meta-learning that is model-agnostic, in the sense t
 ---
 </p>
 </details>
+
 <details>
-<summary>Recasting Gradient-Based Meta-Learning as Hierarchical Bayes, <a href="https://arxiv.org/abs/1801.08930">paper</a>, meta-learning</summary>
+<summary>Recasting Gradient-Based Meta-Learning as Hierarchical Bayes <kbd>meta-learning</kbd></summary>
 <p>
+
+---
+
+<a href="https://arxiv.org/abs/1801.08930">paper</a>
+
+---
+
 Meta-learning allows an intelligent agent to leverage prior learning episodes as a basis for quickly improving performance on a novel task. Bayesian hierarchical modeling provides a theoretical framework for formalizing meta-learning as inference for a set of parameters that are shared across tasks. Here, we reformulate the model-agnostic meta-learning algorithm (MAML) of Finn et al. (2017) as a method for probabilistic inference in a hierarchical Bayesian model. In contrast to prior methods for meta-learning via hierarchical Bayes, MAML is naturally applicable to complex function approximators through its use of a scalable gradient descent procedure for posterior inference. Furthermore, the identification of MAML as hierarchical Bayes provides a way to understand the algorithm's operation as a meta-learning procedure, as well as an opportunity to make use of computational strategies for efficient inference. We use this opportunity to propose an improvement to the MAML algorithm that makes use of techniques from approximate inference and curvature estimation.
+
+---
 </p>
 </details>
+
 <details>
-<summary>Reptile: a Scalable Meta-learning Algorithm, <a href="https://arxiv.org/abs/1803.02999">paper</a>, <a href="https://blog.openai.com/reptile">blog</a>, meta-learning</summary>
+<summary>Reptile: a Scalable Meta-learning Algorithm <kbd>meta-learning</kbd></summary>
 <p>
+
+---
+
+<a href="https://arxiv.org/abs/1803.02999">paper</a>, <a href="https://blog.openai.com/reptile">blog</a>
+
+---
 This paper considers metalearning problems, where there is a distribution of tasks, and we would like to obtain an agent that performs well (i.e., learns quickly) when presented with a previously unseen task sampled from this distribution. <b>We present a remarkably simple metalearning algorithm called Reptile, which learns a parameter initialization that can be fine-tuned quickly on a new task</b>. Reptile works by repeatedly sampling a task, training on it, and moving the initialization towards the trained weights on that task. <b>Unlike MAML, which also learns an initialization, Reptile doesn't require differentiating through the optimization process, making it more suitable for optimization problems where many update steps are required.</b> We show that Reptile performs well on some well-established benchmarks for few-shot classification. We provide some theoretical analysis aimed at understanding why Reptile works.
+
+---
 </p>
 </details>
+
 <details>
-<summary>Meta-Learning with Memory-Augmented Neural Networks, <a href="http://proceedings.mlr.press/v48/santoro16.pdf">paper</a>, meta-learning</summary>
+<summary>Meta-Learning with Memory-Augmented Neural Networks <kbd>meta-learning</kbd></summary>
 <p>
+
+---
+
+<a href="http://proceedings.mlr.press/v48/santoro16.pdf">paper</a>
+
+---
+
 Despite recent breakthroughs in the applications of deep neural networks, one setting that presents a persistent challenge is that of “one-shot learning.” Traditional gradient-based networks require a lot of data to learn, often through extensive iterative training. When new data is encountered, the models must inefficiently relearn their parameters to adequately incorporate the new information without catastrophic interference. <b>Architectures with augmented memory capacities, such as Neural Turing Machines (NTMs), offer the ability to quickly encode and retrieve new information, and hence can potentially obviate the downsides of conventional models.</b> Here, we demonstrate the ability of a memory-augmented neural network to rapidly assimilate new data, and leverage this data to make accurate predictions after only a few samples. We also introduce a new method for accessing an external memory that focuses on memory content, unlike previous methods that additionally use memory locationbased focusing mechanisms.
+
+---
 </p>
 </details>
+
 <details>
-<summary>Learning to learn by gradient descent by gradient descent, <a href="https://arxiv.org/abs/1606.04474">paper</a>, meta-learning</summary>
+<summary>Learning to learn by gradient descent by gradient descent <kbd>meta-learning</kbd></summary>
 <p>
+
+---
+
+<a href="https://arxiv.org/abs/1606.04474">paper</a>
+
+---
+
 The move from hand-designed features to learned features in machine learning has been wildly successful. In spite of this, optimization algorithms are still designed by hand. <b>In this paper we show how the design of an optimization algorithm can be cast as a learning problem, allowing the algorithm to learn to exploit structure in the problems of interest in an automatic way.</b> Our learned algorithms, implemented by LSTMs, outperform generic, hand-designed competitors on the tasks for which they are trained, and also generalize well to new tasks with similar structure. We demonstrate this on a number of tasks, including simple convex problems, training neural networks, and styling images with neural art.
+
+---
 </p>
 </details>
+
 <details>
-<summary>Learning to Learn: Model Regression Networks for Easy Small Sample Learning, <a href="https://www.ri.cmu.edu/pub_files/2016/10/yuxiongw_eccv16_learntolearn.pdf">paper</a>, transfer learning</summary>
+<summary>Learning to Learn: Model Regression Networks for Easy Small Sample Learning <kbd>transfer learning</kbd></summary>
 <p>
+
+---
+
+<a href="https://www.ri.cmu.edu/pub_files/2016/10/yuxiongw_eccv16_learntolearn.pdf">paper</a>
+
+---
+
 We develop a conceptually simple but powerful approach that can learn novel categories from few annotated examples. <b>In this approach, the experience with already learned categories is used to facilitate the learning of novel classes. Our insight is two-fold: 1) there exists a generic, category agnostic transformation from models learned from few samples to models learned from large enough sample sets, and 2) such a transformation could be effectively learned by high-capacity regressors.</b> In particular, we automatically learn the transformation with a deep model regression network on a large collection of model pairs. Experiments demonstrate that encoding this transformation as prior knowledge greatly facilitates the recognition in the small sample size regime on a broad range of tasks, including domain adaptation, fine-grained recognition, action recognition, and scene classification.
+
+---
 </p>
 </details>
+
 <details>
-<summary>Gradient-Based Meta-Learning with Learned Layerwise Metric and Subspace, <a href="https://arxiv.org/abs/1801.05558">paper</a>, meta-learning</summary>
+<summary>Gradient-Based Meta-Learning with Learned Layerwise Metric and Subspace <kbd>meta-learning</kbd></summary>
 <p>
+
+---
+
+<a href="https://arxiv.org/abs/1801.05558">paper</a>
+
+---
+
 Gradient-based meta-learning has been shown to be expressive enough to approximate any learning algorithm. While previous such methods have been successful in meta-learning tasks, they resort to simple gradient descent during meta-testing. <b>Our primary contribution is the <i>MT-net</i>, which enables the meta-learner to learn on each layer's activation space a subspace that the task-specific learner performs gradient descent on.</b> Additionally, a task-specific learner of an <i>MT-net</i> performs gradient descent with respect to a meta-learned distance metric, which warps the activation space to be more sensitive to task identity. We demonstrate that the dimension of this learned subspace reflects the complexity of the task-specific learner's adaptation task, and also that our model is less sensitive to the choice of initial learning rates than previous gradient-based meta-learning methods. Our method achieves state-of-the-art or comparable performance on few-shot classification and regression tasks.
+
+---
 </p>
 </details>
+
 <details>
-<summary>A Simple Neural Attentive Meta-Learner,<a href="https://openreview.net/forum?id=B1DmUzWAW">paper</a>, meta-learning</summary>
+<summary>A Simple Neural Attentive Meta-Learner <kbd>meta-learning</kbd></summary>
 <p>
+
+---
+
+<a href="https://openreview.net/forum?id=B1DmUzWAW">paper</a>
+
+---
+
 Deep neural networks excel in regimes with large amounts of data, but tend to struggle when data is scarce or when they need to adapt quickly to changes in the task. In response, recent work in meta-learning proposes training a meta-learner on a distribution of similar tasks, in the hopes of generalization to novel but related tasks by learning a high-level strategy that captures the essence of the problem it is asked to solve. However, many recent meta-learning approaches are extensively hand-designed, either using architectures specialized to a particular application, or hard-coding algorithmic components that constrain how the meta-learner solves the task. <b>We propose a class of simple and generic meta-learner architectures that use a novel combination of temporal convolutions and soft attention; the former to aggregate information from past experience and the latter to pinpoint specific pieces of information.</b> In the most extensive set of meta-learning experiments to date, we evaluate the resulting Simple Neural AttentIve Learner (or SNAIL) on several heavily-benchmarked tasks. On all tasks, in both supervised and reinforcement learning, SNAIL attains state-of-the-art performance by significant margins.
+
+---
 </p>
 </details>
+
 <details>
-<summary>Differentiable plasticity: training plastic neural networks with backpropagation, <a href="https://arxiv.org/abs/1804.02464">paper</a>, <a href="https://eng.uber.com/differentiable-plasticity">blog</a>, meta-learning</summary>
+<summary>Differentiable plasticity: training plastic neural networks with backpropagation  <kbd>meta-learning</kbd></summary>
 <p>
+
+---
+
+<a href="https://arxiv.org/abs/1804.02464">paper</a>, <a href="https://eng.uber.com/differentiable-plasticity">blog</a>
+
+---
+
 How can we build agents that keep learning from experience, quickly and efficiently, after their initial training? Here we take inspiration from the main mechanism of learning in biological brains: synaptic plasticity, carefully tuned by evolution to produce efficient lifelong learning. We show that plasticity, just like connection weights, can be optimized by gradient descent in large (millions of parameters) recurrent networks with Hebbian plastic connections. First, recurrent plastic networks with more than two million parameters can be trained to memorize and reconstruct sets of novel, high-dimensional 1000+ pixels natural images not seen during training. Crucially, traditional non-plastic recurrent networks fail to solve this task. Furthermore, trained plastic networks can also solve generic meta-learning tasks such as the Omniglot task, with competitive results and little parameter overhead. Finally, in reinforcement learning settings, plastic networks outperform a non-plastic equivalent in a maze exploration task. We conclude that differentiable plasticity may provide a powerful novel approach to the learning-to-learn problem.
+
+---
 </p>
 </details>
+
 <details>
-<summary>Meta-learning with differentiable closed-form solvers, <a href="https://arxiv.org/abs/1805.08136">paper</a>, <a href="http://www.robots.ox.ac.uk/~luca/r2d2.html">project page</a>, meta-learning</summary>
+<summary>Meta-learning with differentiable closed-form solvers <kbd>meta-learning</kbd></summary>
 <p>
+
+---
+
+<a href="https://arxiv.org/abs/1805.08136">paper</a>, <a href="http://www.robots.ox.ac.uk/~luca/r2d2.html">project page</a>
+
+---
+
 Adapting deep networks to new concepts from few examples is extremely challenging, due to the high computational and data requirements of standard fine-tuning procedures. Most works on meta-learning and few-shot learning have thus focused on simple learning techniques for adaptation, such as nearest neighbors or gradient descent. Nonetheless, the machine learning literature contains a wealth of methods that learn non-deep models very efficiently. <b>In this work we propose to use these fast convergent methods as the main adaptation mechanism for few-shot learning. The main idea is to teach a deep network to use standard machine learning tools, such as logistic regression, as part of its own internal model, enabling it to quickly adapt to novel tasks.</b> This requires back-propagating errors through the solver steps. While normally the matrix operations involved would be costly, the small number of examples works to our advantage, by making use of the Woodbury identity. We propose both iterative and closed-form solvers, based on logistic regression and ridge regression components. Our methods achieve excellent performance on three few-shot learning benchmarks, showing competitive performance on Omniglot and surpassing all state-of-the-art alternatives on miniImageNet and CIFAR-100.
+
+---
 </p>
 </details>
