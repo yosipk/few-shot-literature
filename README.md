@@ -27,27 +27,66 @@ Learning from a few examples remains a key challenge in machine learning. Despit
 </details>
 
 <details>
-<summary>Optimization as a model for few-shot learning, <a href="https://openreview.net/pdf?id=rJY0-Kcll">paper</a>, meta-learning</summary>
+<summary>Optimization as a model for few-shot learning <kbd>meta-learning</kbd></summary>
 <p>
+
+---
+
+<a href="https://openreview.net/pdf?id=rJY0-Kcll">paper</a> 
+
+---
+
 Though deep neural networks have shown great success in the large data domain, they generally perform poorly on few-shot learning tasks, where a classifier has to quickly generalize after seeing very few examples from each class. The general belief is that gradient-based optimization in high capacity classifiers requires many iterative steps over many examples to perform well. <b>Here, we propose an LSTM-based meta-learner model to learn the exact optimization algorithm used to train another learner neural network classifier in the few-shot regime. The parametrization of our model allows it to learn appropriate parameter updates specifically for the scenario where a set amount of updates will be made, while also learning a general initialization of the learner (classifier) network that allows for quick convergence of training.</b> We demonstrate that this meta-learning model is competitive with deep metric-learning techniques for few-shot learning.
+
+---
 </p>
 </details>
+
 <details>
-<summary>Prototypical Networks for Few-shot Learning, <a href="https://arxiv.org/abs/1703.05175">paper</a>, meta-learning</summary>
+<summary>Prototypical Networks for Few-shot Learning <kbd>meta-learning</kbd></summary>
 <p>
+
+---
+
+<a href="https://arxiv.org/abs/1703.05175">paper</a> 
+
+---
+
 We propose prototypical networks for the problem of few-shot classification, where a classifier must generalize to new classes not seen in the training set, given only a small number of examples of each new class. <b>Prototypical networks learn a metric space in which classification can be performed by computing distances to prototype representations of each class.</b> Compared to recent approaches for few-shot learning, they reflect a simpler inductive bias that is beneficial in this limited-data regime, and achieve excellent results. We provide an analysis showing that some simple design decisions can yield substantial improvements over recent approaches involving complicated architectural choices and meta-learning. We further extend prototypical networks to zero-shot learning and achieve state-of-the-art results on the CU-Birds dataset.
+
+---
 </p>
 </details>
+
 <details>
-<summary>Meta-Learning for Semi-Supervised Few-Shot Classification, <a href="https://arxiv.org/abs/1803.00676">paper</a>, meta-learning, semi-supervised learning</summary>
+<summary>Meta-Learning for Semi-Supervised Few-Shot Classification <kbd>meta-learning</kbd>, <kbd>semi-supervised learning</kbd></summary>
 <p>
+
+---
+
+<a href="https://arxiv.org/abs/1803.00676">paper</a>
+
+---
+
 In few-shot classification, we are interested in learning algorithms that train a classifier from only a handful of labeled examples. Recent progress in few-shot classification has featured meta-learning, in which a parameterized model for a learning algorithm is defined and trained on episodes representing different classification problems, each with a small labeled training set and its corresponding test set. <b>In this work, we advance this few-shot classification paradigm towards a scenario where unlabeled examples are also available within each episode. We consider two situations: one where all unlabeled examples are assumed to belong to the same set of classes as the labeled examples of the episode, as well as the more challenging situation where examples from other distractor classes are also provided.</b> To address this paradigm, we propose novel extensions of Prototypical Networks (Snell et al., 2017) that are augmented with the ability to use unlabeled examples when producing prototypes. These models are trained in an end-to-end way on episodes, to learn to leverage the unlabeled examples successfully. We evaluate these methods on versions of the Omniglot and miniImageNet benchmarks, adapted to this new framework augmented with unlabeled examples. We also propose a new split of ImageNet, consisting of a large set of classes, with a hierarchical structure. Our experiments confirm that our Prototypical Networks can learn to improve their predictions due to unlabeled examples, much like a semi-supervised algorithm would.
+
+---
 </p>
 </details>
+
 <details>
-<summary>Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks, <a href="https://arxiv.org/abs/1703.03400">paper</a>, <a href="http://bair.berkeley.edu/blog/2017/07/18/learning-to-learn">blog</a>, meta-learning</summary>
+<summary>Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks <kbd>meta-learning</kbd></summary>
 <p>
+
+---
+
+<a href="https://arxiv.org/abs/1703.03400">paper</a>, <a href="http://bair.berkeley.edu/blog/2017/07/18/learning-to-learn">blog</a>
+
+---
+
 We propose an algorithm for meta-learning that is model-agnostic, in the sense that it is compatible with any model trained with gradient descent and applicable to a variety of different learning problems, including classification, regression, and reinforcement learning. The goal of meta-learning is to train a model on a variety of learning tasks, such that it can solve new learning tasks using only a small number of training samples. <b>In our approach, the parameters of the model are explicitly trained such that a small number of gradient steps with a small amount of training data from a new task will produce good generalization performance on that task. In effect, our method trains the model to be easy to fine-tune.</b> We demonstrate that this approach leads to state-of-the-art performance on two few-shot image classification benchmarks, produces good results on few-shot regression, and accelerates fine-tuning for policy gradient reinforcement learning with neural network policies.
+
+---
 </p>
 </details>
 <details>
