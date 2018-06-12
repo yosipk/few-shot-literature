@@ -9,7 +9,7 @@ The approaches to learning from small amount labeled data are:
 
 ## Literature
 <details>
-<summary>Matching Networks for One Shot Learning <img src='x.svg' height=5px align="bottom"></summary>
+<summary>Matching Networks for One Shot Learning <kbd>meta-learning</kbd> 
 <p>
 
 ---
