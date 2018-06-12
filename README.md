@@ -6,6 +6,7 @@ The approaches to learning from small amount labeled data are:
 * **transfer learning**: learning new model by adapting an existing model, usually learned for related tasks
 * **semi-supervised learning**: learning with small amount of labeled data and a larger amount of unlabeled data
 * **meta-learning**: learning to learn with small amount of labeled data by learning in few-shot episodes
+
 Related fields:
 * **unsupervised learning**: learning a good representation for the data without any labels
 * **zero-shot learning**: learning to recognize classes for which labels have not been provided during training
