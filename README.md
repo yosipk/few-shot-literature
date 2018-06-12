@@ -153,21 +153,6 @@ The move from hand-designed features to learned features in machine learning has
 </p>
 </details>
 
-<details>
-<summary>Learning to Learn: Model Regression Networks for Easy Small Sample Learning <kbd>transfer learning</kbd></summary>
-<p>
-
----
-
-<a href="https://www.ri.cmu.edu/pub_files/2016/10/yuxiongw_eccv16_learntolearn.pdf">paper</a>
-
----
-
-We develop a conceptually simple but powerful approach that can learn novel categories from few annotated examples. <b>In this approach, the experience with already learned categories is used to facilitate the learning of novel classes. Our insight is two-fold: 1) there exists a generic, category agnostic transformation from models learned from few samples to models learned from large enough sample sets, and 2) such a transformation could be effectively learned by high-capacity regressors.</b> In particular, we automatically learn the transformation with a deep model regression network on a large collection of model pairs. Experiments demonstrate that encoding this transformation as prior knowledge greatly facilitates the recognition in the small sample size regime on a broad range of tasks, including domain adaptation, fine-grained recognition, action recognition, and scene classification.
-
----
-</p>
-</details>
 
 <details>
 <summary>Gradient-Based Meta-Learning with Learned Layerwise Metric and Subspace <kbd>meta-learning</kbd></summary>
@@ -232,3 +217,167 @@ Adapting deep networks to new concepts from few examples is extremely challengin
 ---
 </p>
 </details>
+
+<details>
+<summary>Piecewise classifier mappings: Learning fine-grained learners for novel categories with few examples <kbd>meta-learning</kbd></summary>
+<p>
+
+---
+
+<a href="https://arxiv.org/abs/1805.04288">paper</a>
+
+---
+
+Humans are capable of learning a new fine-grained concept with very little supervision, e.g., few exemplary images for a species of bird, yet our best deep learning systems need hundreds or thousands of labeled examples. In this paper, we try to reduce this gap by studying the fine-grained image recognition problem in a challenging few-shot learning setting, termed few-shot fine-grained recognition (FSFG). The task of FSFG requires the learning systems to build classifiers for novel fine-grained categories from few examples (only one or less than five). To solve this problem, we propose an end-to-end trainable deep network which is inspired by the state-of-the-art fine-grained recognition model and is tailored for the FSFG task. <b>Specifically, our network consists of a bilinear feature learning module and a classifier mapping module: while the former encodes the discriminative information of an exemplar image into a feature vector, the latter maps the intermediate feature into the decision boundary of the novel category.</b> The key novelty of our model is a "piecewise mappings" function in the classifier mapping module, which generates the decision boundary via learning a set of more attainable sub-classifiers in a more parameter-economic way. We learn the exemplar-to-classifier mapping based on an auxiliary dataset in a meta-learning fashion, which is expected to be able to generalize to novel categories. By conducting comprehensive experiments on three fine-grained datasets, we demonstrate that the proposed method achieves superior performance over the competing baselines.
+
+---
+</p>
+</details>
+
+<details>
+<summary>Learning to Learn: Model Regression Networks for Easy Small Sample Learning <kbd>transfer learning</kbd></summary>
+<p>
+
+---
+
+<a href="https://www.ri.cmu.edu/pub_files/2016/10/yuxiongw_eccv16_learntolearn.pdf">paper</a>
+
+---
+
+We develop a conceptually simple but powerful approach that can learn novel categories from few annotated examples. <b>In this approach, the experience with already learned categories is used to facilitate the learning of novel classes. Our insight is two-fold: 1) there exists a generic, category agnostic transformation from models learned from few samples to models learned from large enough sample sets, and 2) such a transformation could be effectively learned by high-capacity regressors.</b> In particular, we automatically learn the transformation with a deep model regression network on a large collection of model pairs. Experiments demonstrate that encoding this transformation as prior knowledge greatly facilitates the recognition in the small sample size regime on a broad range of tasks, including domain adaptation, fine-grained recognition, action recognition, and scene classification.
+
+---
+</p>
+</details>
+
+<details>
+<summary>Few-Shot Learning Through an Information Retrieval Lens <kbd>meta-learning</kbd>, <kbd>transfer learning</kbd></summary>
+<p>
+
+---
+
+<a href="https://arxiv.org/abs/1707.02610">paper</a>
+
+---
+<b>
+Few-shot learning refers to understanding new concepts from only a few examples. We propose an information retrieval-inspired approach for this problem that is motivated by the increased importance of maximally leveraging all the available information in this low-data regime. We define a training objective that aims to extract as much information as possible from each training batch by effectively optimizing over all relative orderings of the batch points simultaneously. <b>In particular, we view each batch point as a `query' that ranks the remaining ones based on its predicted relevance to them and we define a model within the framework of structured prediction to optimize mean Average Precision over these rankings.</b> Our method achieves impressive results on the standard few-shot classification benchmarks while is also capable of few-shot retrieval.
+
+---
+</p>
+</details>
+
+<details>
+<summary>Learning from Small Sample Sets by Combining Unsupervised Meta-Training with CNNs <kbd>meta-learning</kbd>, <kbd>semi-supervised learning</kbd></summary>
+<p>
+
+---
+
+<a href="https://www.ri.cmu.edu/wp-content/uploads/2017/06/yuxiongw_nips16_ldscnn.pdf">paper</a>
+
+---
+
+This work explores CNNs for the recognition of novel categories from few examples. Inspired by the transferability properties of CNNs, we introduce an additional unsupervised meta-training stage that exposes multiple top layer units to a large amount of unlabeled real-world images. By encouraging these units to learn diverse sets of low-density separators across the unlabeled data, we capture a more generic, richer description of the visual world, which decouples these units from ties to a specific set of categories. We propose an unsupervised margin maximization that jointly estimates compact high-density regions and infers low-density separators. The low-density separator (LDS) modules can be plugged into any or all of the top layers of a standard CNN architecture. The resulting CNNs significantly improve the performance in scene classification, fine-grained recognition, and action recognition with small training samples.
+
+---
+</p>
+</details>
+
+<details>
+<summary>Growing a Brain: Fine-Tuning by Increasing Model Capacity <kbd>transfer learning</kbd></summary>
+<p>
+
+---
+
+<a href="https://www.ri.cmu.edu/wp-content/uploads/2017/06/yuxiongw_cvpr17_growingcnn.pdf">paper</a>
+
+---
+
+CNNs have made an undeniable impact on computer vision through the ability to learn high-capacity models with large annotated training sets. One of their remarkable properties is the ability to transfer knowledge from a large source dataset to a (typically smaller) target dataset. This is usually accomplished through fine-tuning a fixed-size network on new target data. Indeed, virtually every contemporary visual recognition system makes use of fine-tuning to transfer knowledge from ImageNet. In this work, we analyze what components and parameters change during finetuning, and discover that increasing model capacity allows for more natural model adaptation through fine-tuning. By making an analogy to developmental learning, we demonstrate that “growing” a CNN with additional units, either by widening existing layers or deepening the overall network, significantly outperforms classic fine-tuning approaches. But in order to properly grow a network, we show that newly-added units must be appropriately normalized to allow for a pace of learning that is consistent with existing units. We empirically validate our approach on several benchmark datasets, producing state-of-the-art results.
+
+---
+</p>
+</details>
+
+<details>
+<summary>Beyond Fine Tuning: A Modular Approach to Learning on Small Data <kbd>transfer learning</kbd></summary>
+<p>
+
+---
+
+<a href="https://arxiv.org/abs/1611.01714">paper</a>
+
+---
+
+In this paper we present a technique to train neural network models on small amounts of data. Current methods for training neural networks on small amounts of rich data typically rely on strategies such as fine-tuning a pre-trained neural network or the use of domain-specific hand-engineered features. Here we take the approach of treating network layers, or entire networks, as modules and combine pre-trained modules with untrained modules, to learn the shift in distributions between data sets. The central impact of using a modular approach comes from adding new representations to a network, as opposed to replacing representations via fine-tuning. Using this technique, we are able surpass results using standard fine-tuning transfer learning approaches, and we are also able to significantly increase performance over such approaches when using smaller amounts of data.
+
+---
+</p>
+</details>
+
+<details>
+<summary>Piggyback: Adapting a Single Network to Multiple Tasks by Learning to Mask Weights <kbd>transfer learning</kbd></summary>
+<p>
+
+---
+
+<a href="https://arxiv.org/abs/1801.06519">paper</a>
+
+---
+
+This work presents a method for adapting a single, fixed deep neural network to multiple tasks without affecting performance on already learned tasks. By building upon ideas from network quantization and pruning, we learn binary masks that piggyback on an existing network, or are applied to unmodified weights of that network to provide good performance on a new task. These masks are learned in an end-to-end differentiable fashion, and incur a low overhead of 1 bit per network parameter, per task. Even though the underlying network is fixed, the ability to mask individual weights allows for the learning of a large number of filters. We show performance comparable to dedicated fine-tuned networks for a variety of classification tasks, including those with large domain shifts from the initial task (ImageNet), and a variety of network architectures. Unlike prior work, we do not suffer from catastrophic forgetting or competition between tasks, and our performance is agnostic to task ordering.
+
+---
+</p>
+</details>
+
+
+<details>
+<summary>Learning without Forgetting <kbd>transfer learning</kbd></summary>
+<p>
+
+---
+
+<a href="https://arxiv.org/abs/1606.09282">paper</a>
+
+---
+
+When building a unified vision system or gradually adding new capabilities to a system, the usual assumption is that training data for all tasks is always available. However, as the number of tasks grows, storing and retraining on such data becomes infeasible. A new problem arises where we add new capabilities to a Convolutional Neural Network (CNN), but the training data for its existing capabilities are unavailable. We propose our Learning without Forgetting method, which uses only new task data to train the network while preserving the original capabilities. Our method performs favorably compared to commonly used feature extraction and fine-tuning adaption techniques and performs similarly to multitask learning that uses original task data we assume unavailable. A more surprising observation is that Learning without Forgetting may be able to replace fine-tuning with similar old and new task datasets for improved new task performance.
+
+---
+</p>
+</details>
+
+
+<details>
+<summary>Knowledge Concentration: Learning 100K Object Classifiers in a Single CNN <kbd>transfer learning</kbd></summary>
+<p>
+
+---
+
+<a href="https://arxiv.org/abs/1711.07607">paper</a>
+
+---
+
+Fine-grained image labels are desirable for many computer vision applications, such as visual search or mobile AI assistant. These applications rely on image classification models that can produce hundreds of thousands (e.g. 100K) of diversified fine-grained image labels on input images. However, training a network at this vocabulary scale is challenging, and suffers from intolerable large model size and slow training speed, which leads to unsatisfying classification performance. A straightforward solution would be training separate expert networks (specialists), with each specialist focusing on learning one specific vertical (e.g. cars, birds...). However, deploying dozens of expert networks in a practical system would significantly increase system complexity and inference latency, and consumes large amounts of computational resources. To address these challenges, we propose a Knowledge Concentration method, which effectively transfers the knowledge from dozens of specialists (multiple teacher networks) into one single model (one student network) to classify 100K object categories. There are three salient aspects in our method: (1) a multi-teacher single-student knowledge distillation framework; (2) a self-paced learning mechanism to allow the student to learn from different teachers at various paces; (3) structurally connected layers to expand the student network capacity with limited extra parameters. We validate our method on OpenImage and a newly collected dataset, Entity-Foto-Tree (EFT), with 100K categories, and show that the proposed model performs significantly better than the baseline generalist model.
+
+---
+</p>
+</details>
+
+
+<details>
+<summary>Preserving Semantic Relations for Zero-Shot Learning <kbd>zero-shot learning</kbd></summary>
+<p>
+
+---
+
+<a href="https://arxiv.org/abs/1803.03049">paper</a>
+
+---
+
+Zero-shot learning has gained popularity due to its potential to scale recognition models without requiring additional training data. This is usually achieved by associating categories with their semantic information like attributes. However, we believe that the potential offered by this paradigm is not yet fully exploited. In this work, we propose to utilize the structure of the space spanned by the attributes using a set of relations. We devise objective functions to preserve these relations in the embedding space, thereby inducing semanticity to the embedding space. Through extensive experimental evaluation on five benchmark datasets, we demonstrate that inducing semanticity to the embedding space is beneficial for zero-shot learning. The proposed approach outperforms the state-of-the-art on the standard zero-shot setting as well as the more realistic generalized zero-shot setting. We also demonstrate how the proposed approach can be useful for making approximate semantic inferences about an image belonging to a category for which attribute information is not available.
+
+---
+</p>
+</details>
+
